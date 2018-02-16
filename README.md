@@ -35,7 +35,7 @@
 - {$ZOO_PORT} : Port of the Zookeeper Instance (default : 2181)
 
 
-### Zabbix Configuration
+## Zabbix Configuration
 
 1) Copy `UserParameter_Zookeeper.conf` to `/etc/zabbix/zabbix_agentd.d` folder (or whatever is default and/or configured on your system).
 
