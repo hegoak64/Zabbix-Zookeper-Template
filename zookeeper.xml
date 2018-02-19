@@ -1132,13 +1132,7 @@ UserParameter=echo2nc[*],echo $1 | nc $2 $3</description>
             <description/>
             <type>0</type>
             <manual_close>0</manual_close>
-            <dependencies>
-                <dependency>
-                    <name>zk - Node is not OK</name>
-                    <expression>{Template App Zookeeper:echo2nc[ruok,{$ZOO_IP},{$ZOO_PORT}].str(imok)}=0</expression>
-                    <recovery_expression/>
-                </dependency>
-            </dependencies>
+            <dependencies/>
             <tags/>
         </trigger>
         <trigger>
