@@ -1120,7 +1120,7 @@ UserParameter=echo2nc[*],echo $1 | nc $2 $3</description>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template App Zookeeper:echo2nc[mntr,{$ZOO_IP},{$ZOO_PORT}].change()}=1</expression>
+            <expression>{Template App Zookeeper:zookeeper[Server State].change()}=1</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>zk - Node State change to {ITEM.VALUE}</name>
